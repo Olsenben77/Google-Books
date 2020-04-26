@@ -1,11 +1,38 @@
-import React from "react";
-import API from "../utils/API";
-export default ({ setInput, searchSubmit, books }) => {
+import React, { Component } from "react";
+import "./Search.css";
+
+//code to construct the components
+
+class Books extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      books: [],
+      searchField: "",
+    };
+  }
+
+  handleSearch = (e) => {
+    this.setState({ searchField: e.target.value });
+  };
+  render() {
+    return <div></div>;
+  }
+}
+
+const SearchArea = () => {
   return (
     <div className="search-area">
       <form action="">
-        <input type="text" />
-        <button className="btn btn-warning" type="submit">
+        <input
+          type="text"
+          style={{ marginTop: "25px", marginRight: "5px", marginLeft: "10px" }}
+        />
+        <button
+          className="btn btn-warning"
+          type="submit"
+          style={{ marginBottom: "5px", color: "white" }}
+        >
           {" "}
           Search
         </button>
@@ -14,11 +41,4 @@ export default ({ setInput, searchSubmit, books }) => {
   );
 };
 
-/* <h1>Search Google Books</h1>
-<input onChange={(e) => setInput(e.target.value)} />
-
-<button className="btn btn-warning" onClick={() => searchSubmit()}>
-  Submit
-</button>
-
-<h2>Results</h2> */
+export default SearchArea;

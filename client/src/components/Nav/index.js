@@ -6,7 +6,7 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <i
-        class="fas fa-book fa-2x"
+        className="fas fa-book fa-2x"
         style={{ color: "white", marginRight: "10px" }}
       ></i>
       <a className="navbar-brand" href="/">
