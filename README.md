@@ -29,7 +29,7 @@ Type in the terminal type "npm i"
 
 This app can then be opened in the terminal using "npm run start" or by visiting the deployed link at https://shrouded-cove-29201.herokuapp.com/
 
-![Main-Page-UI](public/Screenshot.png)
+![Main-Page-UI](Google-Books/client/public/Screenshot.png)
 
 ## Motivation
 
