@@ -3,6 +3,7 @@ import Saved from "./pages/Saved";
 import Search from "./pages/Search";
 import Empty from "./pages/Empty";
 import Nav from "./components/Nav";
+import NoMatch from "./pages/NoMatch";
 import Footer from "./components/Footer";
 import React, { Component } from "react";
 // import API from "./utils/API";
@@ -19,6 +20,7 @@ class App extends Component {
               <Route exact path="/pages/saved" component={Saved} />
               <Route exact path="/pages/saved/:id" component={Saved} />
               <Route exact path="/pages/Empty" component={Empty} />
+              <Route component={NoMatch} />
             </Switch>
             <Footer />
           </Route>
